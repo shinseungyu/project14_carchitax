@@ -33,6 +33,11 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  verification: {
+    other: {
+      'naver-site-verification': '1f53ce612acd99cccb028683ad929ab2ead49298',
+    },
+  },
 }
 
 const jsonLd = {
