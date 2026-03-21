@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import Link from 'next/link'
+import NavMenu from './components/NavMenu'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -156,15 +157,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
-          <div className="max-w-[1200px] mx-auto px-4 h-16 flex items-center justify-between">
+          <div className="relative max-w-[1200px] mx-auto px-4 h-16 flex items-center justify-between">
             <Link href="/" className="font-extrabold text-lg text-gray-900 tracking-tight">🚗 자동차 취등록세(취득세)</Link>
-            <div className="flex gap-6">
-              <Link href="/" className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">취등록세(취득세) 계산기</Link>
-              <Link href="/used-car" className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">중고차 취등록세(취득세) 계산기</Link>
-              <Link href="/eco-car" className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">친환경차 취등록세(취득세)</Link>
-              <Link href="/discount-guide" className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">감면 혜택 가이드</Link>
-              <Link href="/faq" className="text-sm text-gray-500 hover:text-gray-900 font-medium transition-colors">FAQ</Link>
-            </div>
+            <NavMenu />
           </div>
         </nav>
         {children}
