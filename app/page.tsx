@@ -207,6 +207,21 @@ export default function HomePage() {
             취득세 정보 더 보기 <ChevronRight size={14} />
           </Link>
         </div>
+
+        {/* newsioo.com 배너 */}
+        <a href="https://newsioo.com" target="_blank" rel="noopener noreferrer" className="mt-8 block rounded-3xl overflow-hidden" style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%)', textDecoration: 'none', padding: '28px 32px' }}>
+          <p style={{ color: '#60a5fa', fontWeight: 800, fontSize: 12, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 8 }}>CUSTOMS CALCULATOR</p>
+          <p style={{ color: 'white', fontWeight: 800, fontSize: 20, lineHeight: 1.4, marginBottom: 8 }}>
+            해외직구 관세, 얼마나 나올까?
+          </p>
+          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: 14, lineHeight: 1.6, marginBottom: 20 }}>
+            2026년 최신 기준 관세·부가세·개별소비세를 품목별로 자동 계산해드립니다.<br />실구매가를 미리 확인하고 직구 계획을 세워보세요!
+          </p>
+          <span style={{ display: 'inline-block', background: '#2563eb', color: 'white', fontWeight: 700, fontSize: 14, padding: '10px 22px', borderRadius: 50 }}>
+            관세 계산기 바로가기 →
+          </span>
+        </a>
+
       </div>
     </main>
   )
