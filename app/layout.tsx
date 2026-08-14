@@ -164,12 +164,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </nav>
         {children}
         <footer className="mt-16 border-t border-gray-200 py-8 text-center text-xs text-gray-400">
-          <div className="flex justify-center gap-6 mb-2">
+          <div className="flex flex-wrap justify-center gap-6 mb-2">
+            <Link href="/about" className="hover:text-gray-600">사이트 소개</Link>
+            <Link href="/contact" className="hover:text-gray-600">연락처</Link>
             <Link href="/privacy-policy" className="hover:text-gray-600">개인정보 처리방침</Link>
             <Link href="/terms-of-service" className="hover:text-gray-600">이용약관</Link>
             <Link href="/cookie-policy" className="hover:text-gray-600">쿠키 정책</Link>
           </div>
-          <p>© 2026 CarProTax · 본 계산기는 참고용이며 실제 세액과 다를 수 있습니다.</p>
+          <p>© 2026 CarProTax · 문의: tlsfkaus0711@gmail.com · 본 계산기는 참고용이며 실제 세액과 다를 수 있습니다.</p>
         </footer>
       </body>
     </html>
