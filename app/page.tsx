@@ -3,6 +3,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import postsData from '@/data/posts.json'
 import CalculatorClient from './CalculatorClient'
+import CarbarDealerBanner from '@/components/Ads/CarbarDealerBanner'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/' },
@@ -13,6 +14,9 @@ export default function HomePage() {
     <main className="min-h-screen bg-gray-50">
       <div className="max-w-[1200px] mx-auto px-4 py-8">
         <CalculatorClient />
+
+        {/* 카바딜러 신차 견적 비교 (텐핑 제휴) */}
+        <CarbarDealerBanner className="mt-10" />
 
         {/* SEO 콘텐츠 */}
         <div className="mt-12 space-y-8 text-sm text-gray-600 leading-relaxed">

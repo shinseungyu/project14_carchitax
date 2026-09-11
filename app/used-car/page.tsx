@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { AlertTriangle, ChevronRight, ChevronDown, Check } from 'lucide-react'
 import TopAd from '@/components/Ads/TopAd'
+import CarbarDealerBanner from '@/components/Ads/CarbarDealerBanner'
 import InFeedAd from '@/components/Ads/InFeedAd'
 import RegionSelector from '@/components/RegionSelector'
 import { REGIONS, RegionValue } from '@/data/regions'
@@ -572,6 +573,9 @@ export default function UsedCarPage() {
 
           </div>
         </div>
+
+        {/* 카바딜러 신차 견적 비교 (텐핑 제휴) */}
+        <CarbarDealerBanner className="mt-10" />
 
         {/* SEO */}
         <div className="mt-12 space-y-8 text-sm text-gray-600 leading-relaxed">

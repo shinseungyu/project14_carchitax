@@ -2,6 +2,7 @@ import posts from '@/data/posts.json'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import CarbarDealerBanner from '@/components/Ads/CarbarDealerBanner'
 
 interface Post {
   id: number
@@ -89,6 +90,9 @@ export default async function BoardPostPage({ params }: { params: Promise<{ id: 
           ))}
         </div>
       </article>
+
+      {/* 카바딜러 신차 견적 비교 (텐핑 제휴) */}
+      <CarbarDealerBanner className="mt-10" />
 
       <section style={{ marginTop: '48px', paddingTop: '24px', borderTop: '1px solid #eee' }}>
         <h2 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '16px', color: '#333' }}>다른 글 보기</h2>
