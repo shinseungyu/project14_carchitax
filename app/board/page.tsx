@@ -1,6 +1,7 @@
 import posts from '@/data/posts.json'
 import Link from 'next/link'
 import type { Metadata } from 'next'
+import CarbarDealerBanner from '@/components/Ads/CarbarDealerBanner'
 
 export const metadata: Metadata = {
   title: '자동차 취득세 정보 게시판 | 취등록세 계산기',
@@ -49,6 +50,9 @@ export default function BoardPage() {
           </Link>
         ))}
       </div>
+
+      {/* 카바딜러 신차 견적 비교 (텐핑 제휴) */}
+      <CarbarDealerBanner className="mt-10" />
     </main>
   )
 }

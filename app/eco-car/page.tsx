@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import CarbarDealerBanner from '@/components/Ads/CarbarDealerBanner'
 
 const tabs = [
   { id: 'hybrid', label: '🔍 하이브리드 팩트체크' },
@@ -334,6 +335,9 @@ export default function EcoCarPage() {
           </div>
         </div>
       )}
+
+      {/* 카바딜러 신차 견적 비교 (텐핑 제휴) */}
+      <CarbarDealerBanner className="mt-10" />
 
       {/* CTA */}
       <div className="mt-10 p-5 bg-gray-50 rounded-2xl text-center border border-gray-200">

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import CarbarDealerBanner from '@/components/Ads/CarbarDealerBanner'
 
 const tabs = [
   { id: 'child', label: '👶 다자녀 감면' },
@@ -272,6 +273,9 @@ export default function DiscountGuidePage() {
           )
         })}
       </div>
+
+      {/* 카바딜러 신차 견적 비교 (텐핑 제휴) */}
+      <CarbarDealerBanner className="mt-10" />
 
       {/* CTA */}
       <div className="mt-10 p-6 bg-gray-50 rounded-2xl text-center">

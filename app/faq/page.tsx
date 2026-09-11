@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CarbarDealerBanner from '@/components/Ads/CarbarDealerBanner'
 
 export const metadata: Metadata = {
   title: '자동차 취등록세 계산기 FAQ | 자주 묻는 질문',
@@ -193,6 +194,9 @@ export default function FaqPage() {
             </Link>
           </div>
         </div>
+
+        {/* 카바딜러 신차 견적 비교 (텐핑 제휴) */}
+        <CarbarDealerBanner className="mt-10" />
 
         {/* CTA */}
         <div className="mt-6 p-5 bg-gray-50 rounded-2xl">
